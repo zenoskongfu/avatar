@@ -1,0 +1,20 @@
+{
+	"name": "avatar",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cd playground && vite"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@types/color-convert": "^2.0.4",
+		"color-convert": "^3.0.1",
+		"vite": "^6.2.5"
+	},
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
+}
