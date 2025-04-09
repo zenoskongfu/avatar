@@ -18,12 +18,12 @@ A canvas-based avatar generator tool that supports both React and Vue frameworks
 
 #### Install
 ```bash
-npm install avatar-generator
+npm install @zenos-chen/avatar
 ```
 
-#### React Usage
+#### React Usage 
 ```jsx
-import { AvatarReact } from 'avatar';
+import { AvatarReact } from '@zenos-chen/avatar';
 
 function App() {
   return <AvatarReact str="Example" height={200} />;
@@ -33,7 +33,7 @@ function App() {
 #### Vue Usage
 ```vue
 <script setup>
-import { AvatarVue } from 'avatar';
+import { AvatarVue } from '@zenos-chen/avatar/vue';
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 {
 	"name": "@zenos-chen/avatar",
-	"version": "1.0.1",
+	"version": "1.0.3",
 	"main": "index.js",
 	"type": "module",
 	"keywords": [
@@ -10,13 +10,13 @@
 		"canvas"
 	],
 	"description": "A customizable avatar generator with React & Vue support",
-	"homepage": "https://github.com/yourusername/avatar",
+	"homepage": "https://github.com/zenoskongfu/avatar",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/yourusername/avatar.git"
+		"url": "https://github.com/zenoskongfu/avatar"
 	},
 	"bugs": {
-		"url": "https://github.com/yourusername/avatar/issues"
+		"url": "https://github.com/zenoskongfu/avatar/issues"
 	},
 	"publishConfig": {
 		"access": "public",
@@ -48,7 +48,6 @@
 	"scripts": {
 		"dev": "cd playground && vite",
 		"dev:build": "cd playground && vite build",
-		"prepublishOnly": "npm run build",
 		"build": "tsup && npm run copy",
 		"copy": "cpx package.json dist && cpx ./*.MD dist/"
 	},

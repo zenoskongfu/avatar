@@ -18,12 +18,12 @@
 
 #### 安装
 ```bash
-npm install avatar-generator
+npm install @zenos-chen/avatar
 ```
 
-#### React使用方式
+#### React使用方式 
 ```jsx
-import { AvatarReact } from 'avatar';
+import { AvatarReact } from '@zenos-chen/avatar';
 
 function App() {
   return <AvatarReact str="示例" height={200} />;
@@ -33,7 +33,7 @@ function App() {
 #### Vue使用方式
 ```vue
 <script setup>
-import { AvatarVue } from 'avatar';
+import { AvatarVue } from '@zenos-chen/avatar/vue';
 </script>
 
 <template>
