@@ -1,6 +1,6 @@
 # Avatar Generator 头像生成器
 
-[English](./READMD.MD) | 中文文档
+[English](./README.MD) | 中文文档
 
 ## 中文文档
 
