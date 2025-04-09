@@ -2,18 +2,51 @@
 	"name": "avatar",
 	"version": "1.0.0",
 	"main": "index.js",
-	"scripts": {
-		"dev": "cd playground && vite"
+	"type": "module",
+	"keywords": [
+		"avatar",
+		"react",
+		"vue",
+		"canvas"
+	],
+	"exports": {
+		".": {
+			"types": "./react/index.d.ts",
+			"import": "./react/index.js",
+			"require": "./react/index.cjs",
+			"default": "./react/index.js"
+		},
+		"./react": {
+			"types": "./react/index.d.ts",
+			"import": "./react/index.js",
+			"require": "./react/index.cjs"
+		},
+		"./vue": {
+			"types": "./vue/index.d.ts",
+			"import": "./vue/index.js",
+			"require": "./vue/index.cjs"
+		}
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"licenses": "MIT",
+	"scripts": {
+		"dev": "cd playground && vite",
+		"dev:build": "cd playground && vite build",
+		"build": "tsup && npm run copy",
+		"copy": "cpx package.json dist && cpx ./*.MD dist/"
+	},
+	"author": "zenos.chen@foxmail.com",
 	"description": "",
-	"dependencies": {
+	"devDependencies": {
+		"cp": "^0.2.0",
+		"cpx": "^1.5.0",
+		"ncp": "^2.0.0",
+		"typescript": "^5.8.3",
 		"@types/color-convert": "^2.0.4",
 		"@types/node": "^22.14.0",
 		"@types/react": "^19.1.0",
 		"@types/react-dom": "^19.1.1",
+		"@vitejs/plugin-react": "^4.3.4",
+		"@vitejs/plugin-vue": "^5.2.3",
 		"color-convert": "^3.0.1",
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0",
@@ -21,7 +54,7 @@
 		"vite": "^6.2.5",
 		"vue": "^3.5.13"
 	},
-	"devDependencies": {
-		"typescript": "^5.8.3"
-	}
+	"files": [
+		"*"
+	]
 }
