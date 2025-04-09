@@ -6,6 +6,10 @@ function getImageByCanvas(canvas: HTMLCanvasElement) {
 }
 
 export function generateAvatar(str: string, height: number) {
+	height = Number(height);
+	if (isNaN(height)) {
+		height = 10;
+	}
 	const canvas = document.createElement("canvas");
 	const ctx = canvas.getContext("2d")!;
 	canvas.width = 200;
@@ -30,6 +34,10 @@ export function generateAvatar(str: string, height: number) {
 }
 
 export function generateAvatarCircle(str: string, height: number) {
+	height = Number(height);
+	if (isNaN(height)) {
+		height = 10;
+	}
 	const canvas = document.createElement("canvas");
 	const ctx = canvas.getContext("2d")!;
 

@@ -1,6 +1,6 @@
 {
-	"name": "avatar",
-	"version": "1.0.0",
+	"name": "@zenos-chen/avatar",
+	"version": "1.0.1",
 	"main": "index.js",
 	"type": "module",
 	"keywords": [
