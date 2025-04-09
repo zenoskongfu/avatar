@@ -23,23 +23,38 @@ npm install @zenos-chen/avatar
 
 #### React Usage 
 ```jsx
-import { AvatarReact } from '@zenos-chen/avatar';
+import { Avatar} from '@zenos-chen/avatar';
 
 function App() {
-  return <AvatarReact str="Example" height={200} />;
+  return <Avatar str="H" height={200} />;
 }
 ```
 
+![quare](./doc/quare.png)
+
+
+### React Circle Usage
+```jsx
+import { AvatarCircle } from '@zenos-chen/avatar';
+
+function App() {
+  return <AvatarCircle str="H" height={200} />;
+}
+```
+![circle](./doc/circle.png)
+
 #### Vue Usage
-```vue
+```ts
 <script setup>
-import { AvatarVue } from '@zenos-chen/avatar/vue';
+import { Avatar } from '@zenos-chen/avatar/vue';
 </script>
 
 <template>
-  <AvatarVue str="Example" :height="200" />
+  <Avatar str="H" :height="200" />
 </template>
 ```
+
+![quare](./doc/quare.png)
 
 ### Development Guide
 

@@ -23,15 +23,29 @@ npm install @zenos-chen/avatar
 
 #### React使用方式 
 ```jsx
-import { AvatarReact } from '@zenos-chen/avatar';
+import { Avatar} from '@zenos-chen/avatar';
 
 function App() {
-  return <AvatarReact str="示例" height={200} />;
+  return <Avatar str="H" height={200} />;
 }
 ```
 
+![quare](./doc/quare.png)
+
+### React 圆形使用方式
+```jsx
+import { AvatarCircle } from '@zenos-chen/avatar';
+
+function App() {
+  return <AvatarCircle str="程" height={200} />;
+}
+```
+![zh](./doc/zh.png)
+
+
+
 #### Vue使用方式
-```vue
+```ts
 <script setup>
 import { AvatarVue } from '@zenos-chen/avatar/vue';
 </script>
