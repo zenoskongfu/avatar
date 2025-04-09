@@ -1,6 +1,6 @@
-import { generateAvatar } from "../src/avatar.ts";
+import { generateAvatar, generateAvatarCircle } from "../src/util/avatar";
 
-const imageSrc = generateAvatar("Island.js", 200);
+const imageSrc = generateAvatarCircle("Z", 200);
 const img = document.createElement("img");
 img.src = imageSrc;
 document.body.appendChild(img);

@@ -1,7 +1,19 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "preserve",
+    "paths": {
+      "avatar": [
+        "../src"
+      ]
+    }
   },
+  "include": [
+    "./src/**/*"
+  ],
   "files": [
     "./vite.config.ts"
   ]
