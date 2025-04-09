@@ -1,4 +1,4 @@
-import { default as AvatarVue } from "./vue/index";
-import { default as AvatarReact } from "./react/index";
+import { Avatar as AvatarVue, AvatarCircle as AvatarVueCircle } from "./vue/index";
+import { Avatar as AvatarReact, AvatarCircle as AvatarReactCircle } from "./react/index";
 
-export { AvatarVue, AvatarReact };
+export { AvatarVue, AvatarVueCircle, AvatarReactCircle, AvatarReact };

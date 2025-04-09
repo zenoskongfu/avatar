@@ -1,6 +1,4 @@
-import React from "react";
-import { generateAvatar } from "../util/avatar";
+import Avatar from "./Avatar";
+import AvatarCircle from "./AvatarCircle";
 
-export default function Avatar({ str, height }: { str: string; height: number }) {
-	return React.createElement(React.Fragment, null, React.createElement("img", { src: generateAvatar(str, height) }));
-}
+export { Avatar, AvatarCircle };
