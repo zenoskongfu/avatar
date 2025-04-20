@@ -1,6 +1,6 @@
 {
 	"name": "@zenos-chen/avatar",
-	"version": "1.0.7",
+	"version": "1.0.11",
 	"main": "index.js",
 	"type": "module",
 	"keywords": [
@@ -13,7 +13,7 @@
 	"homepage": "https://github.com/zenoskongfu/avatar",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/zenoskongfu/avatar"
+		"url": "git+https://github.com/zenoskongfu/avatar.git"
 	},
 	"bugs": {
 		"url": "https://github.com/zenoskongfu/avatar/issues"
@@ -48,9 +48,10 @@
 	"scripts": {
 		"dev": "cd playground && vite",
 		"dev:build": "cd playground && vite build",
-		"build": "tsup && npm run copy",
+		"build": "tsup",
 		"copy": "cpx package.json dist && cpx ./*.MD dist/",
-		"publish": "cd dist && npm publish --access public"
+		"_prepublish": "npm version patch && npm run copy",
+		"_publish": "npm run _prepublish && npm publish ./dist"
 	},
 	"author": "zenos.chen@foxmail.com",
 	"devDependencies": {
