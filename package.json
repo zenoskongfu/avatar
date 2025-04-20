@@ -49,7 +49,8 @@
 		"dev": "cd playground && vite",
 		"dev:build": "cd playground && vite build",
 		"build": "tsup && npm run copy",
-		"copy": "cpx package.json dist && cpx ./*.MD dist/"
+		"copy": "cpx package.json dist && cpx ./*.MD dist/",
+		"publish": "cd dist && npm publish --access public"
 	},
 	"author": "zenos.chen@foxmail.com",
 	"devDependencies": {
